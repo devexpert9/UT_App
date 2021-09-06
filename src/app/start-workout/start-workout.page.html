@@ -1,0 +1,215 @@
+<!--ion-header>
+  <ion-toolbar>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header-->
+
+<ion-content>
+  <div filtersec>
+  <a closebtn href="javascript:void(0)" (click)="dismiss()"><ion-icon name="close-outline"></ion-icon></a>
+  <div headsec>
+    <h3>Chest, Shoulder, Biceps</h3>
+    <span>02:32</span>
+  </div>
+  <div form-group>
+    <label>Workout Note</label>
+    <ion-item lines="none">
+      <ion-input type="text"  placeholder="Type here..."></ion-input>					
+    </ion-item>
+  </div>	
+  
+  <div form-group headingForm>
+    <label>Bench Press (Dumbbell) 
+      <ion-icon name="ellipsis-vertical-outline" (click)="popClick()"></ion-icon>
+      <div popoverBox *ngIf="popcontent">
+        <ul>
+          <li> <a routerLink="">Add Note</a></li>
+          <li> <a routerLink="">Weight Unit</a></li>
+          <li> <a routerLink="">Add Warm Up Sets</a></li>
+          <li> <a routerLink="">Remove Exercise</a></li>
+        </ul>
+      </div>
+    </label>
+    <ion-grid class="ion-no-padding">
+      <ion-row class="headFont">
+        <ion-col size="2">
+          SET
+        </ion-col>
+        <ion-col size="4">
+          PREVIOUS
+        </ion-col>
+        <ion-col size="3" class="p6">
+          KG
+        </ion-col>
+        <ion-col size="3" class="p6">
+           REPS
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="2">
+          <h3>1</h3>
+        </ion-col>
+        <ion-col size="3">
+          <p>15 kg x 8</p>
+        </ion-col>
+        <ion-col size="3" class="p6">
+          <ion-input value="5"></ion-input>
+        </ion-col>
+        <ion-col size="3" class="p6">
+           <ion-input value="5"></ion-input>
+        </ion-col>
+        <ion-col size="1">
+           <ion-checkbox></ion-checkbox>
+        </ion-col>
+      </ion-row>
+      
+      <ion-row>
+        <ion-col size="2">
+          <h3>2</h3>
+        </ion-col>
+        <ion-col size="3">
+          <p>15 kg x 8</p>
+        </ion-col>
+        <ion-col size="3" class="p6">
+          <ion-input value="5"></ion-input>
+        </ion-col>
+        <ion-col size="3" class="p6">
+           <ion-input value="5"></ion-input>
+        </ion-col>
+        <ion-col size="1">
+           <ion-checkbox></ion-checkbox>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="2">
+          <h3>3</h3>
+        </ion-col>
+        <ion-col size="3">
+          <p>15 kg x 8</p>
+        </ion-col>
+        <ion-col size="3" class="p6">
+          <ion-input value="5"></ion-input>
+        </ion-col>
+        <ion-col size="3" class="p6">
+           <ion-input value="5"></ion-input>
+        </ion-col>
+        <ion-col size="1">
+           <ion-checkbox checked></ion-checkbox>
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
+    <div class="ion-text-center popupNote">
+      <h4 (click)="popupNote()">ADD SET</h4>
+      <div popoverBox1 *ngIf="popnote">
+        <ul>
+          <li>
+            <h5>Warm Up</h5> 
+            <span><ion-icon (click)="presentAlert()" name="help-outline"></ion-icon></span>
+          </li>
+          <li>
+            <h5>Drop set</h5>
+            <span><ion-icon (click)="presentAlert()" name="help-outline"></ion-icon></span>
+          </li>
+          <li>
+            <h5>Failure</h5>
+            <span><ion-icon (click)="presentAlert()" name="help-outline"></ion-icon></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>	
+
+  <div form-group headingForm>
+    <label>Shoulder Press (Plate Loaded) 
+      <ion-icon name="ellipsis-vertical-outline" (click)="popClick1()"></ion-icon>
+      <div popoverBox *ngIf="popcontent1">
+        <ul>
+          <li> <a routerLink="">Add Note</a></li>
+          <li> <a routerLink="">Weight Unit</a></li>
+          <li> <a routerLink="">Add Warm Up Sets</a></li>
+          <li> <a routerLink="">Remove Exercise</a></li>
+        </ul>
+      </div>
+    </label>
+    <ion-grid class="ion-no-padding">
+      <ion-row class="headFont">
+        <ion-col size="2">
+          SET
+        </ion-col>
+        <ion-col size="4">
+          PREVIOUS
+        </ion-col>
+        <ion-col size="3" class="p6">
+          KG
+        </ion-col>
+        <ion-col size="3" class="p6">
+           REPS
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="2">
+          <h3>1</h3>
+        </ion-col>
+        <ion-col size="3">
+          <p>15 kg x 8</p>
+        </ion-col>
+        <ion-col size="3" class="p6">
+          <ion-input value="5"></ion-input>
+        </ion-col>
+        <ion-col size="3" class="p6">
+           <ion-input value="5"></ion-input>
+        </ion-col>
+        <ion-col size="1">
+           <ion-checkbox></ion-checkbox>
+        </ion-col>
+      </ion-row>
+      
+      <ion-row>
+        <ion-col size="2">
+          <h3>2</h3>
+        </ion-col>
+        <ion-col size="3">
+          <p>15 kg x 8</p>
+        </ion-col>
+        <ion-col size="3" class="p6">
+          <ion-input value="5"></ion-input>
+        </ion-col>
+        <ion-col size="3" class="p6">
+           <ion-input value="5"></ion-input>
+        </ion-col>
+        <ion-col size="1">
+           <ion-checkbox></ion-checkbox>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="2">
+          <h3>3</h3>
+        </ion-col>
+        <ion-col size="3">
+          <p>15 kg x 8</p>
+        </ion-col>
+        <ion-col size="3" class="p6">
+          <ion-input value="5"></ion-input>
+        </ion-col>
+        <ion-col size="3" class="p6">
+           <ion-input value="5"></ion-input>
+        </ion-col>
+        <ion-col size="1">
+           <ion-checkbox checked></ion-checkbox>
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
+  </div>	
+</div>
+</ion-content>
+<ion-footer>
+  <ion-button (click)="dismiss()" color="primary"  shape="round" expand="full">
+      Finish
+  </ion-button>
+</ion-footer>

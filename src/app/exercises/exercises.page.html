@@ -1,0 +1,72 @@
+<ion-header>
+    <ion-toolbar color="primary">
+		<ion-back-button text="" icon="chevron-back-outline" slot="start" defaultHref="/all-workout">
+		</ion-back-button> 	
+        <ion-title class="ion-text-center">Exercises</ion-title>
+		<ion-buttons slot="end" (click)="presentModal()"><ion-icon name="options-outline"></ion-icon></ion-buttons>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+	<div exercises-sec>
+		<ion-card  class="bg1">
+			<ion-button favourite-icon><ion-icon name="heart"></ion-icon></ion-button>
+			<ion-card-content routerLink="/exercise-details">
+			    <h3>Barbell Bench Press</h3>
+				<div playbtn>
+				    <a href="javascript:void(0)"><ion-icon name="play"></ion-icon></a>
+				</div>
+				<div content-sec>
+					<ul>
+						<li><img src="assets/img/icon1.png" alt="" />3 Sets</li>
+						<li><img src="assets/img/icon2.png" alt="" />Total Time 15 min</li>
+					</ul>
+				</div>
+			</ion-card-content>
+		</ion-card>
+		<ion-card  class="bg2">
+			<ion-button favourite-icon><ion-icon name="heart"></ion-icon></ion-button>
+			<ion-card-content routerLink="/exercise-details">
+			    <h3>Incline Bench Press</h3>
+				<div playbtn>
+				    <a href="javascript:void(0)"><ion-icon name="play"></ion-icon></a>
+				</div>
+				<div content-sec>
+					<ul>
+						<li><img src="assets/img/icon1.png" alt="" />3 Sets</li>
+						<li><img src="assets/img/icon2.png" alt="" />Total Time 15 min</li>
+					</ul>
+				</div>
+			</ion-card-content>
+		</ion-card>
+		<ion-card  class="bg3">
+			<ion-button favourite-icon><ion-icon name="heart"></ion-icon></ion-button>
+			<ion-card-content routerLink="/exercise-details">
+			    <h3>Pushups</h3>
+				<div playbtn>
+				    <a href="javascript:void(0)"><ion-icon name="play"></ion-icon></a>
+				</div>
+				<div content-sec>
+					<ul>
+						<li><img src="assets/img/icon1.png" alt="" />4 Sets</li>
+						<li><img src="assets/img/icon2.png" alt="" />Total Time 15 min</li>
+					</ul>
+				</div>
+			</ion-card-content>
+		</ion-card>
+		<ion-card  class="bg4">
+			<ion-button favourite-icon><ion-icon name="heart"></ion-icon></ion-button>
+			<ion-card-content routerLink="/exercise-details">
+			    <h3>Dips</h3>
+				<div playbtn>
+				    <a href="javascript:void(0)"><ion-icon name="play"></ion-icon></a>
+				</div>
+				<div content-sec>
+					<ul>
+						<li><img src="assets/img/icon1.png" alt="" />3 Sets</li>
+						<li><img src="assets/img/icon2.png" alt="" />Total Time 15 min</li>
+					</ul>
+				</div>
+			</ion-card-content>
+		</ion-card>
+	</div>
+</ion-content>

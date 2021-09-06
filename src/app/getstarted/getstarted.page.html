@@ -1,0 +1,56 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-title class="ion-text-center">Get started today!</ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+	    <div pricing-sec>
+			<div pricing-img>
+				<img src="assets/img/pricing-bg.png" alt="" />
+			</div>
+			<div pricing-mn>
+				<ion-slides pager="false" [options]="slideOpts3">		
+					<ion-slide>				
+						<div price-content>
+							<input type="radio" id="check" name="subscription" style="display:none" /><label for="check">
+								<h6>Premium</h6>						
+								<h3><sup>$</sup>15.99</h3>						
+								<h4>60 days</h4>
+								<p>It includes <b>7 days</b> free trial</p>						
+								<span checkboxbtn><ion-icon name="checkmark-outline"></ion-icon></span>
+							</label>				
+						</div>
+					</ion-slide>		
+								
+					<ion-slide>				
+						<div price-content>
+							<input type="radio" checked id="check1"  name="subscription" style="display:none" /><label  for="check1">
+								<h6>Basic</h6>						
+								<h3><sup>$</sup>9.99</h3>						
+								<h4>30 days</h4>
+								<p>It includes <b>7 days</b> free trial</p>						
+								<span checkboxbtn><ion-icon name="checkmark-outline"></ion-icon></span>
+							</label>				
+						</div>
+					</ion-slide>	
+					<ion-slide>				
+						<div price-content>
+							<input type="radio"  id="check2" name="subscription" style="display:none" /><label for="check2">
+								<h6>Platinum</h6>						
+								<h3><sup>$</sup>99</h3>						
+								<h4>Life time</h4>
+								<p>It includes <b>7 days</b> free trial</p>						
+								<span checkboxbtn><ion-icon name="checkmark-outline"></ion-icon></span>
+							</label>				
+						</div>
+					</ion-slide>	
+				</ion-slides>				
+			</div>
+				<div pricing-btn>
+				<ion-button routerLink="/tabs/workoutselection" color="primary"  shape="round" expand="full">
+					Choose & Pay
+				</ion-button>
+				<p><a href="javascript:void(0)" routerLink="/tabs/workoutselection">Skip</a></p>	
+			</div>
+		</div>
+</ion-content>

@@ -1,0 +1,134 @@
+<ion-header>
+  <ion-toolbar>
+     <ion-back-button slot="start" defaultHref="/settings" text=""  icon="chevron-back-outline"></ion-back-button>
+     <ion-title class="ion-text-center">Edit Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <div profiledetails>
+     <div userimg>
+        <img src="assets/img/user1.jpg"/>
+        <label for="editphoto">
+           <ion-icon name="camera-outline"></ion-icon>
+        </label>
+        <input type="file" id="editphoto"  name="editphoto" style="display:none;"/>
+     </div>
+     <ion-segment mode="md" [(ngModel)]="profiletab">
+     <ion-segment-button value="basic">
+        Basic Info
+     </ion-segment-button>
+     <ion-segment-button value="password">
+        Change Password
+     </ion-segment-button>
+     </ion-segment>
+     <div [ngSwitch]="profiletab" >
+        <ion-list *ngSwitchCase="'basic'">
+           <div formgroup>
+              <label>Name</label>
+              <ion-item lines="none" class="ion-no-padding">
+                 <ion-input type="text" placeholder="Enter  Name" value="John Deo"> </ion-input>
+              </ion-item>
+           </div>
+           <div formgroup>
+              <label>Email Address </label>
+              <ion-item lines="none" class="ion-no-padding">
+                 <ion-input type="email" placeholder="Enter  Email Address" value="johndeo@hotmail.com"> </ion-input>
+                 <ion-icon slot="end" name="checkmark-outline"></ion-icon>
+              </ion-item>
+           </div>
+           <div formgroup>
+              <label>Gender </label>
+              <ion-item lines="none"  class="ion-no-padding">
+                 <ion-select  [(ngModel)]="gender.form" [interfaceOptions]="customAlertOptions" interface="alert">
+                 <ion-select-option value="male"> Male </ion-select-option>
+                 <ion-select-option value="female"> Female </ion-select-option>
+                 <ion-select-option value="other"> Other </ion-select-option>
+                 </ion-select>
+              </ion-item>
+           </div>
+           <div formgroup>
+              <label>Weight </label>
+              <ion-row>
+                 <ion-col size="9" pl-0>
+                    <ion-item lines="none"  class="ion-no-padding">
+                       <ion-input type="text" placeholder="Enter  Weight" value="80"> </ion-input>
+                    </ion-item>
+                 </ion-col>
+                 <ion-col size="3" pr-0>
+                    <ion-item lines="none"  class="ion-no-padding">
+                       <ion-select  [(ngModel)]="weight.form" [interfaceOptions]="customAlertOptions1" interface="alert">
+                       <ion-select-option value="kg"> Kg </ion-select-option>
+                       <ion-select-option value="lbs"> Lbs </ion-select-option>
+                       </ion-select>
+                    </ion-item>
+                 </ion-col>
+              </ion-row>
+           </div>
+           <div formgroup>
+              <label>Height </label>
+              <ion-row>
+                 <ion-col size="9" pl-0>
+                    <ion-item lines="none"  class="ion-no-padding">
+                       <ion-input type="text" placeholder="Enter  Height" value="65"> </ion-input>
+                    </ion-item>
+                 </ion-col>
+                 <ion-col size="3" pr-0>
+                    <ion-item lines="none"  class="ion-no-padding">
+                       <ion-select  [(ngModel)]="height.form" [interfaceOptions]="customAlertOptions2" interface="alert">
+                       <ion-select-option value="inches"> Inches </ion-select-option>
+                       <ion-select-option value="cm"> Cm </ion-select-option>
+                       </ion-select>
+                    </ion-item>
+                 </ion-col>
+              </ion-row>
+           </div>
+           <div formgroup>
+              <label>Age</label>
+              <ion-item lines="none" class="ion-no-padding">
+                 <ion-input type="text" placeholder="Enter  Age" value="32 Years"> </ion-input>
+              </ion-item>
+           </div>
+           <div formgroup>
+              <label>Activity Level </label>
+              <ion-item lines="none"  class="ion-no-padding">
+                 <ion-select  [(ngModel)]="activity.form" [interfaceOptions]="customAlertOptions3" interface="alert">
+                 <ion-select-option value="beginner">Beginner</ion-select-option>
+                 <ion-select-option value="intermediate">Intermediate</ion-select-option>
+                 <ion-select-option value="expert">Expert</ion-select-option>
+                 </ion-select>
+              </ion-item>
+           </div>
+
+           <ion-button   color="primary"  shape="round" expand="full">
+              Submit
+           </ion-button>
+        </ion-list>
+        <ion-list *ngSwitchCase="'password'" >
+           <div formgroup>
+              <label>Current Password </label>
+              <ion-item lines="none" class="ion-no-padding">
+                 <ion-input type="password" placeholder="Enter  Current Password" value="******************"> </ion-input>
+                 <ion-icon slot="end" name="eye"></ion-icon>
+              </ion-item>
+           </div>
+           <div formgroup>
+              <label>New Password </label>
+              <ion-item lines="none" class="ion-no-padding">
+                 <ion-input type="password" placeholder="Enter  New Password" value="******************"> </ion-input>
+                 <ion-icon slot="end" name="eye"></ion-icon>
+              </ion-item>
+           </div>
+           <div formgroup>
+              <label>Confirm New Password </label>
+              <ion-item lines="none" class="ion-no-padding">
+                 <ion-input type="password" placeholder="Enter   New Password" value="******************"> </ion-input>
+                 <ion-icon slot="end" name="eye"></ion-icon>
+              </ion-item>
+           </div>
+           <ion-button   color="primary"  shape="round" expand="full">
+              Submit
+           </ion-button>
+        </ion-list>
+     </div>
+  </div>
+</ion-content>

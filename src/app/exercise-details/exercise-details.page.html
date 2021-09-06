@@ -1,0 +1,60 @@
+<ion-header>
+    <ion-toolbar color="primary">
+		<ion-back-button text="" icon="chevron-back-outline" slot="start" defaultHref="/exercises">
+		</ion-back-button> 	
+        <ion-title class="ion-text-center">Exercise Details</ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+	<div Exercisedetail>
+	    <ion-card class="ion-no-margin">
+		    <img src="assets/img/exerciseimg1.jpg"/>
+			    <div videocontent>
+				    <h3>Barbell Bench Press</h3>
+					<p>Publishing industry or by web designers.</p>
+				</div>
+			    <div videoplayersec>
+					<ion-range mode="md">
+					    <ion-label slot="start">05:36</ion-label>
+					    <ion-label slot="end"><ion-icon name="move-outline"></ion-icon></ion-label>
+					</ion-range>
+				</div>
+				<a playbtn href="javascript:void(0)"><ion-icon name="play"></ion-icon></a>
+	    </ion-card>
+	    <div coursecontent>
+		    <p>This workout was a direct request of our FB Community - you all are right in that we needed more upper body warm ups! I hope this new warm up serves you well, and gets you ready to work hard during the workout that may lie ahead.</p>
+	    </div>
+	    <div workoutcount>
+	        <h2 heading>Working Details</h2>
+	        <ul>
+				 <li><p>Duration :</p> 8 Minutes</li>
+				 <li><p>Calorie Burn :</p> 24-45</li>
+				 <li><p>Difficulty :</p> 1/5</li>
+				 <li><p>Equipment :</p> Bench Press Equipment</li>
+				 <li><p>Training Type :</p> Low Impact, Warm Up</li>
+				 <li><p>Sets :</p> 4</li>
+				 <li><p>Repeat :</p> 5</li>
+				 <li><p>Tempo :</p> Isometric</li>
+				 <li><p>Rest Time :</p> 15 Minutes</li>
+	        </ul>
+	    </div>
+	    <div workingdetails>
+	        <h2 heading>Working Details</h2>
+	        <ul>
+				 <li><ion-icon name="remove-outline"></ion-icon><p>Boxer’s Shuffle</p></li>
+				 <li><ion-icon name="remove-outline"></ion-icon><p>Squat + Knee Drives (alternating)</p></li>
+				 <li><ion-icon name="remove-outline"></ion-icon><p>Jump Rope + Fast Feet</p></li>
+				 <li><ion-icon name="remove-outline"></ion-icon><p>Traveling Inchworm</p></li>
+				 <li><ion-icon name="remove-outline"></ion-icon><p>Spider Man Mountain Climbers (slow)</p></li>
+	        </ul>
+	    </div>
+	</div>
+	<div detailbtn>
+	    <ion-button routerLink="/favorite-exercises"><ion-icon name="heart"></ion-icon></ion-button>
+	    <ion-button><img src="assets/img/video-download-icon.png" alt="" /></ion-button>
+	    <ion-button><img src="assets/img/pdf-download-icon.png" alt="" /></ion-button>
+	    <ion-button (click)="presentModal()"><ion-icon name="play"></ion-icon></ion-button>
+		<ion-button routerLink="/scheduleexercise"><ion-icon name="calendar-outline"></ion-icon></ion-button>
+	    <ion-button><ion-icon name="share-social"></ion-icon></ion-button>
+	</div>		
+</ion-content>

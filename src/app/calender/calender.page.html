@@ -1,0 +1,110 @@
+<ion-header>
+  <ion-toolbar color="primary">
+  <!-- <ion-back-button text="" icon="chevron-back-outline" slot="start" defaultHref="/">
+  </ion-back-button> 	 -->
+    <ion-title class="ion-text-center">Calender</ion-title>
+    <ion-thumbnail slot="end" routerLink="/scheduleexercise">
+      <img src="assets/img/timew.png" style="width: 30px;height: auto;" />
+    </ion-thumbnail>
+  </ion-toolbar>
+  <ion-calendar [ngClass]="status ? 'showClass' : 'hideClass'" [(ngModel)]="dateRange"
+    [options]="optionsRange"
+    [type]="type"
+    [format]="'YYYY-MM-DD'">
+  </ion-calendar>
+  <div class="ion-text-center showMnth" (click)="showMnth()">
+    {{msg1 ? 'Show Week' : 'Show Month'}}
+  </div>
+</ion-header>
+<ion-content>
+
+<div exercises-sec>
+  <ion-card class="bg1">
+    <ion-button favourite-icon><ion-icon name="heart"></ion-icon></ion-button>
+    <ion-card-content routerLink="/calexercisedetail">
+        <h3>Barbell Bench Press</h3>
+      <div playbtn>
+          <a href="javascript:void(0)"><ion-icon name="play"></ion-icon></a>
+      </div>
+      <div content-sec>
+        <ul>
+          <li><img src="assets/img/icon1.png" alt="" />3 Sets</li>
+          <li><img src="assets/img/icon2.png" alt="" />Total Time 15 min</li>
+        </ul>
+      </div>
+      <h3 class="completed">Completed <span class="online_icon"></span></h3>
+    </ion-card-content>
+    <div content-sec1>
+      <ul>
+        <li class="calBox"><a routerLink="/rescheduleexercise">Reschedule</a> <span> | </span>  <a href="javascript: void(0)">Delete</a> </li>
+      </ul>
+    </div>
+  </ion-card>
+
+  <ion-card class="bg2">
+    <ion-button favourite-icon><ion-icon name="heart"></ion-icon></ion-button>
+    <ion-card-content routerLink="/calexercisedetail">
+        <h3>Incline Bench Press</h3>
+      <div playbtn>
+          <a href="javascript:void(0)"><ion-icon name="play"></ion-icon></a>
+      </div>
+      <div content-sec>
+        <ul>
+          <li><img src="assets/img/icon1.png" alt="" />3 Sets</li>
+          <li><img src="assets/img/icon2.png" alt="" />Total Time 15 min</li>
+        </ul>
+      </div>
+      <!-- <h3 class="completed">Completed <span class="online_icon"></span></h3> -->
+    </ion-card-content>
+    <div content-sec1>
+      <ul>
+        <li class="calBox"><a routerLink="/rescheduleexercise">Reschedule</a> <span> | </span>  <a href="javascript: void(0)">Delete</a> </li>
+      </ul>
+    </div>
+  </ion-card>
+
+  <ion-card class="bg3">
+    <ion-button favourite-icon><ion-icon name="heart"></ion-icon></ion-button>
+    <ion-card-content routerLink="/calexercisedetail">
+        <h3>Pushups</h3>
+      <div playbtn>
+          <a href="javascript:void(0)"><ion-icon name="play"></ion-icon></a>
+      </div>
+      <div content-sec>
+        <ul>
+          <li><img src="assets/img/icon1.png" alt="" />3 Sets</li>
+          <li><img src="assets/img/icon2.png" alt="" />Total Time 15 min</li>
+        </ul>
+      </div>
+      <h3 class="completed">Completed <span class="online_icon"></span></h3>
+    </ion-card-content>
+    <div content-sec1>
+      <ul>
+        <li class="calBox"><a routerLink="/rescheduleexercise">Reschedule</a> <span> | </span>  <a href="javascript: void(0)">Delete</a> </li>
+      </ul>
+    </div>
+  </ion-card>
+
+  <ion-card class="bg3">
+    <ion-button favourite-icon><ion-icon name="heart"></ion-icon></ion-button>
+    <ion-card-content routerLink="/calexercisedetail">
+        <h3>Dips</h3>
+      <div playbtn>
+          <a href="javascript:void(0)"><ion-icon name="play"></ion-icon></a>
+      </div>
+      <div content-sec>
+        <ul>
+          <li><img src="assets/img/icon1.png" alt="" />3 Sets</li>
+          <li><img src="assets/img/icon2.png" alt="" />Total Time 15 min</li>
+        </ul>
+      </div>
+      <h3 class="completed">Completed <span class="online_icon"></span></h3>
+    </ion-card-content>
+    <div content-sec1>
+      <ul>
+        <li class="calBox"><a routerLink="/rescheduleexercise">Reschedule</a> <span> | </span>  <a href="javascript: void(0)">Delete</a> </li>
+      </ul>
+    </div>
+  </ion-card>>
+</div>
+</ion-content>

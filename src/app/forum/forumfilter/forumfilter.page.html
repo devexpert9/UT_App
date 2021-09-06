@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-text-left"><div> Add Forum</div></ion-title>
+    <ion-buttons slot="end" (click)="dismiss()"><ion-icon name="close-outline"></ion-icon></ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="p8">
+  <form>
+    <ion-list lines="none">
+      <ion-item lines="none" class="ion-no-padding">
+        <ion-input type="text" placeholder="Title....." name="name" autocapitalize="off" required>
+        </ion-input>
+      </ion-item>
+    </ion-list>
+
+    <ion-list lines="none">
+      <ion-item lines="none" class="ion-no-padding">
+        <ion-textarea placeholder="Description....."></ion-textarea>
+      </ion-item>
+    </ion-list>
+
+    <ion-button shape="round" class="round" color="primary" type="submit" expand="full">Post</ion-button>
+  </form>
+</ion-content>

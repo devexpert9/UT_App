@@ -1,0 +1,25 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-title class="ion-text-center">Upload Image</ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <div uploadimgsec>
+		<div uploadimage>
+		    <div fileupload>
+		        <label for="fileupload">
+				    <div uploadinner>
+					    <img src="assets/img/camera-icon.png"/><h3>Take a Picture</h3> 
+					</div>
+				</label>
+			    <input type="file" id="fileupload" name="fileupload" style="display:none"/>		    
+		    </div>
+			<p>Take a Photo or choose from your library</p>
+		</div>	
+    </div>
+</ion-content>
+<ion-footer>
+    <ion-button routerLink="/readytogo" color="primary"  shape="round" expand="full">
+        Upload
+    </ion-button>
+</ion-footer>

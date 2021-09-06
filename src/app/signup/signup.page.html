@@ -1,0 +1,51 @@
+<!--ion-header>
+  <ion-toolbar>
+    <ion-title>signup</ion-title>
+  </ion-toolbar>
+</ion-header-->
+<ion-content>
+	<div login>
+		<div logo>
+		    <img src="assets/img/logo.png"/>
+		    <h1>Sign Up To Continue</h1>
+		</div>
+		<div formgroup>
+		    <ion-item lines="none" class="ion-no-padding"> 
+			    <ion-label position="stacked">Name</ion-label>
+			    <ion-input type="text" placeholder="Enter  Name" value="John Deo"> </ion-input>
+		    </ion-item>
+	    </div> 
+	    <div formgroup>
+		    <ion-item lines="none" class="ion-no-padding"> 
+			    <ion-label position="stacked">Email</ion-label>
+			    <ion-input type="email" placeholder="Enter  Email Address" value="johndeo@hotmail.com"> </ion-input>
+			    <ion-icon slot="end" name="checkmark-outline"></ion-icon>
+		    </ion-item>
+	    </div> 
+	    <div formgroup>
+		    <ion-item lines="none" class="ion-no-padding"> 
+			    <ion-label position="stacked">Password</ion-label>
+			    <ion-input type="password" placeholder="Enter  Password" value="..............."> </ion-input>
+			    <ion-icon slot="end" name="eye"></ion-icon>
+		    </ion-item>
+	    </div> 
+	    <div formgroup>
+		    <ion-item lines="none" class="ion-no-padding"> 
+			    <ion-label position="stacked">Confirm Password</ion-label>
+			    <ion-input type="password" placeholder="Enter Confirm Password" value="..............."> </ion-input>
+			    <ion-icon slot="end" name="eye"></ion-icon>
+		    </ion-item>
+	    </div> 
+	    <ion-button btn-login  color="primary"  shape="round" expand="full" routerLink="/gender">
+		    Signup
+	    </ion-button>
+	    <div socialicons>
+		    <h2 signinwith>or Signup With</h2>
+		    <div sociallinks>
+		        <ion-buttons><ion-icon name="logo-google"></ion-icon></ion-buttons>
+		        <ion-buttons><ion-icon name="logo-facebook"></ion-icon></ion-buttons>
+		    </div>
+	    </div>
+	    <p signuptext>Already have an account? <a href="javascript:void(0)" routerLink="/"> Login Here</a></p>
+	</div>
+</ion-content>

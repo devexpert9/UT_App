@@ -1,0 +1,93 @@
+<ion-header>
+  <ion-toolbar  color="primary">
+     <ion-back-button slot="start" defaultHref="/" text=""  icon="chevron-back-outline"></ion-back-button>
+     <ion-title class="ion-text-center">Reschedule Exercise</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <ion-label heading>
+    <h2>Select Date</h2>
+  </ion-label>
+  <div formgroup mb15>
+    <ion-item lines="none"  class="ion-no-padding">
+      <ion-datetime value="2021-08-01T15:43:40.394Z" display-timezone="utc"></ion-datetime>
+    </ion-item>
+  </div>
+
+  <ion-label heading>
+    <h2>Program Abilities</h2>
+  </ion-label>
+  <div formgroup>
+    <ion-item lines="none"  class="ion-no-padding">
+      <ion-select placeholder="Beginner" interface="alert">
+        <ion-select-option value="1"> Beginner </ion-select-option>
+        <ion-select-option value="2"> Beginner </ion-select-option>
+        <ion-select-option value="3"> Beginner </ion-select-option>
+      </ion-select>
+    </ion-item>
+  </div>
+
+  <ion-list>
+    <ion-label heading>
+      <h2>Select Exercises</h2>
+    </ion-label>
+
+    <ion-item lines="none">
+      <ion-thumbnail slot="start">
+        <span>
+          <img src="assets/img/exerciseimg1.jpg" alt="" />
+        </span>				
+      </ion-thumbnail>	
+      <ion-label>
+        <h4>Barbell Bench Press</h4>
+        <div content-sec>
+          <ul>
+            <li><img src="assets/img/icon1.png" alt="" />3 Sets</li>
+            <li><img src="assets/img/icon2.png" alt="" />15 min</li>
+          </ul>
+        </div>
+      </ion-label>
+      <ion-checkbox slot="end" checked></ion-checkbox>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-thumbnail slot="start">
+        <span>
+          <img src="assets/img/exerciseimg2.jpg" alt="" />
+        </span>				
+      </ion-thumbnail>	
+      <ion-label>
+        <h4>Incline Bench Press</h4>
+        <div content-sec>
+          <ul>
+            <li><img src="assets/img/icon1.png" alt="" />3 Sets</li>
+            <li><img src="assets/img/icon2.png" alt="" />15 min</li>
+          </ul>
+        </div>
+      </ion-label>
+      <ion-checkbox slot="end" checked></ion-checkbox>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-thumbnail slot="start">
+        <span>
+          <img src="assets/img/exerciseimg3.jpg" alt="" />
+        </span>				
+      </ion-thumbnail>	
+      <ion-label>
+        <h4>Pushups</h4>
+        <div content-sec>
+          <ul>
+            <li><img src="assets/img/icon1.png" alt="" />3 Sets</li>
+            <li><img src="assets/img/icon2.png" alt="" />15 min</li>
+          </ul>
+        </div>
+      </ion-label>
+      <ion-checkbox slot="end"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+
+  <ion-button   color="primary"  shape="round" expand="full">
+    Save
+  </ion-button>
+</ion-content>
